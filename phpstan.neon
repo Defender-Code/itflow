@@ -1,0 +1,14 @@
+parameters:
+    level: 1
+    paths:
+        - .
+    excludePaths:
+        - plugins/vendor/*
+        - plugins/TCPDF/*
+        - plugins/PHPMailer/*
+        - plugins/stripe-php/*
+    ignoreErrors:
+        - '#Call to an undefined method#'
+        - '#Variable \$.*might not be defined#'
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
